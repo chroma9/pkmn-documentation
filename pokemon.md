@@ -42,6 +42,7 @@ Evolutions = IVYSAUR,Level,16
 [746]
 Name = Wishiwashi
 InternalName = WISHIWASHI
+PokedexNumber = 746
 Type1 = WATER
 BaseStats = 45,20,20,40,25,25
 GenderRate = Female50Percent
@@ -61,7 +62,7 @@ Weight = 0.3
 Color = Blue
 Shape = Finned
 Kind = Small Fry
-Pokedex = It's awfully weak and notably tasty, so everyone is always out to get it. As it happens, anyone trying to bully it receives a painful lesson.
+PokedexEntry = It's awfully weak and notably tasty, so everyone is always out to get it. As it happens, anyone trying to bully it receives a painful lesson.
 FormName = Solo Form
 Generation = 7
 BattlerPlayerX = 0
