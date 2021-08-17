@@ -43,7 +43,7 @@ Evolutions = IVYSAUR,Level,16
 Below is a list of what each value is and how to modify them accordingly.
 | Part | Required | Value |
 | :---- | :---- | :--- |
-| [ID Number] | Yes | This is the Pokémon's Numeric ID. This is not the Pokédex Number. This also represents where the next pokemon begins. |
+| [ID Number] | Yes | This is the Pokémon's Numeric ID. This is not the Pokédex Number. This also represents where the next Pokémon begins. |
 | Name | Yes | The name of the Pokémon as seen by the player. |
 | InternalName | Yes | This must be different for each species. Also known as the ID, this is how the scripts refer to the species. Typically this is the same as the species name, but written in all capital letters and with no spaces or symbols. In the scripts. The ID is never seen by the player |
 | Pokedex | Yes | The National Dex number of the Pokémon. |
