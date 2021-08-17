@@ -6,7 +6,7 @@ Here is an example of **Bulbasaur** as formatted for the **pokemon.txt** file.
 [1]
 Name = Bulbasaur
 InternalName = BULBASAUR
-Pokedex = 1
+PokedexNumber = 1
 Type1 = GRASS
 Type2 = POISON
 BaseStats = 45,49,49,45,65,65
@@ -29,7 +29,7 @@ Color = Green
 Shape = Quadruped
 Habitat = Grassland
 Kind = Seed
-Pokedex = Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.
+PokedexEntry = Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.
 Generation = 1
 BattlerPlayerX = -4
 BattlerPlayerY = 0
@@ -46,7 +46,7 @@ Below is a list of what each value is and how to modify them accordingly.
 | [ID Number] | Yes | This is the Pokémon's Numeric ID. This is not the Pokédex Number. This also represents where the next Pokémon begins. |
 | Name | Yes | The name of the Pokémon as seen by the player. |
 | InternalName | Yes | This must be different for each species. Also known as the ID, this is how the scripts refer to the species. Typically this is the same as the species name, but written in all capital letters and with no spaces or symbols. In the scripts. The ID is never seen by the player |
-| Pokedex | Yes | The National Dex number of the Pokémon. |
+| PokedexNumber | Yes | The National Dex number of the Pokémon. |
 | Type1 | Yes | The first type of the Pokémon. |
 | Type2 | No | The second type of the Pokémon. |
 | BaseStats | Yes | A list of pokemon stats seperated by commas.<br>This is in order of:<ol><li>HP</li><li>Attack</li><li>Defense</li><li>Speed</li><li>Sp. Attack</li><li>Sp. Defense</li> |
@@ -70,6 +70,7 @@ Below is a list of what each value is and how to modify them accordingly.
 | Habitat | Yes | The kind of location that the species can typically be found in. The default available habitats are:<ul><li>None</li><li>Cave</li><li>Forest</li><li>Grassland</li><li>Mountain</li><li>Rare</li><li>RoughTerrain</li><li>Sea</li><li>Urban</li><li>WatersEdge</li></ul>"Rare" can be taken to mean "unknown" here.<br><br>This information is currently unused but may be used in the future. |
 | Kind | Yes | The species' category, which is displayed in the Pokédex. For example, Bulbasaur is the Seed Pokémon. The word "Pokémon" is automatically added to the end, so only "Seed" needs to be here.	|
 | FormName | No | If this does not exist, then its form name as shown in the Pokédex's Forms page will be "Male"/"Female" if the species is gendered. If the species is genderless, its form name will instead be "Genderless" (if this is the only form for the species) or "One Form" (if the species also has other forms). |
+| PokedexEntry | Yes | The description of the Pokémon in the Pokédex. |
 | Generation | Yes | A number representing the generation of Pokémon games in which this species first appeared. This information is unused currently. |
 | WildItemCommon<br>WildItemUncommon<br>WildItemRare | No | The IDs of items that a wild Pokémon of the species may be found holding. Each line can only have one item.<br><br>The chances of holding the item are 50%, 5% and 1% respectively. If all three are the same item, then the chance of holding it is 100% instead. |
 | BattlerPlayerX<br>BattlerPlayerY | Yes | Affects the positioning of the back sprite of the species in battle. A higher number means the back sprite is placed further right/lower down in the screen. Can be positive or negative. |
