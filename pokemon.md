@@ -38,6 +38,38 @@ BattlerEnemyY = 26
 BattlerShadowX = 0
 BattlerShadowSize = 2
 Evolutions = IVYSAUR,Level,16
+#-------------------------------
+[746]
+Name = Wishiwashi
+InternalName = WISHIWASHI
+Type1 = WATER
+BaseStats = 45,20,20,40,25,25
+GenderRate = Female50Percent
+GrowthRate = Fast
+BaseEXP = 61
+EffortPoints = 1,0,0,0,0,0
+Rareness = 60
+Happiness = 70
+Abilities = SCHOOLING
+Moves = 1,WATERGUN,1,GROWL,6,HELPINGHAND,9,FEINTATTACK,14,BRINE,17,AQUARING,22,TEARFULLOOK,25,TAKEDOWN,30,DIVE,33,BEATUP,38,AQUATAIL,41,DOUBLEEDGE,46,SOAK,49,ENDEAVOR,54,HYDROPUMP
+TutorMoves = AQUATAIL,ATTRACT,BULLDOZE,CONFIDE,COVET,DOUBLETEAM,EARTHQUAKE,ENDEAVOR,FACADE,FRUSTRATION,HAIL,HELPINGHAND,HIDDENPOWER,ICEBEAM,IRONTAIL,PROTECT,RAINDANCE,REST,RETURN,ROUND,SCALD,SLEEPTALK,SNORE,SUBSTITUTE,SURF,SWAGGER,TOXIC,UTURN,WATERFALL,WATERPULSE
+EggMoves = MIST,MUDDYWATER,WATERPULSE,WATERSPORT,WHIRLPOOL
+Compatibility = Water2
+StepsToHatch = 3840
+Height = 0.2
+Weight = 0.3
+Color = Blue
+Shape = Finned
+Kind = Small Fry
+Pokedex = It's awfully weak and notably tasty, so everyone is always out to get it. As it happens, anyone trying to bully it receives a painful lesson.
+FormName = Solo Form
+Generation = 7
+BattlerPlayerX = 0
+BattlerPlayerY = 0
+BattlerEnemyX = 0
+BattlerEnemyY = 0
+BattlerShadowX = 0
+BattlerShadowSize = 2
 ```
 
 Below is a list of what each value is and how to modify them accordingly.
