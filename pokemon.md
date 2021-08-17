@@ -6,6 +6,7 @@ Here is an example of **Bulbasaur** as formatted for the **pokemon.txt** file.
 [1]
 Name = Bulbasaur
 InternalName = BULBASAUR
+Pokedex = 1
 Type1 = GRASS
 Type2 = POISON
 BaseStats = 45,49,49,45,65,65
@@ -42,8 +43,10 @@ Evolutions = IVYSAUR,Level,16
 Below is a list of what each value is and how to modify them accordingly.
 | Part | Required | Value |
 | :---- | :---- | :--- |
-| [ID Number] | Yes |This is the Pokémon's National Dex number. |
+| [ID Number] | Yes | This is the Pokémon's Numeric ID. This is not the Pokédex Number. This also represents where the next pokemon begins. |
 | Name | Yes | The name of the Pokémon as seen by the player. |
+| InternalName | Yes | This must be different for each species. Also known as the ID, this is how the scripts refer to the species. Typically this is the same as the species name, but written in all capital letters and with no spaces or symbols. In the scripts. The ID is never seen by the player |
+| Pokedex | Yes | The National Dex number of the Pokémon. |
 | Type1 | Yes | The first type of the Pokémon. |
 | Type2 | No | The second type of the Pokémon. |
 | BaseStats | Yes | A list of pokemon stats seperated by commas.<br>This is in order of:<ol><li>HP</li><li>Attack</li><li>Defense</li><li>Speed</li><li>Sp. Attack</li><li>Sp. Defense</li> |
@@ -63,6 +66,7 @@ Below is a list of what each value is and how to modify them accordingly.
 | Height | Yes | The height of the species in meters, to one decimal place. Use a period for the decimal point, and do not use commas for thousands.<br>The Pokédex will automatically show this height in feet/inches if the game recognises that the player is in the USA. This is only cosmetic; the rest of the scripts still perform calculations using the meters value defined. |
 | Weight | Yes | The weight of the species in kilograms, to one decimal place. Use a period for the decimal point, and do not use commas for thousands.<br>The Pokédex will automatically show this weight in pounds if the game recognises that the player is in the USA. This is only cosmetic; the rest of the scripts still perform calculations using the kilograms value defined. |
 | Color | Yes | The main body color of the species. The default available body colors are:<ul><li>Black</li><li>Blue</li><li>Brown</li><li>Gray</li><li>Green</li><li>Pink</li><li>Purple</li><li>Red</li><li>White</li><li>Yellow</li></ul>| 
+| Shape | Yes | The body shape of the species. The Pokédex can search for Pokémon of particular shapes. The default available body shapes are:<ul><li>Head</li><li>Serpentine</li><li>Finned</li><li>HeadArms</li><li>HeadBase</li><li>BipedalTail</li><li>HeadLegs</li><li>Quadruped</li><li>Winged</li><li>Multiped</li><li>MultiBody</li><li>Bipedal</li><li>MultiWinged</li><li>Insectoid</li></ul> |
 | Habitat | Yes | The kind of location that the species can typically be found in. The default available habitats are:<ul><li>None</li><li>Cave</li><li>Forest</li><li>Grassland</li><li>Mountain</li><li>Rare</li><li>RoughTerrain</li><li>Sea</li><li>Urban</li><li>WatersEdge</li></ul>"Rare" can be taken to mean "unknown" here.<br><br>This information is currently unused but may be used in the future. |
 | Kind | Yes | The species' category, which is displayed in the Pokédex. For example, Bulbasaur is the Seed Pokémon. The word "Pokémon" is automatically added to the end, so only "Seed" needs to be here.	|
 | FormName | No | If this does not exist, then its form name as shown in the Pokédex's Forms page will be "Male"/"Female" if the species is gendered. If the species is genderless, its form name will instead be "Genderless" (if this is the only form for the species) or "One Form" (if the species also has other forms). |
